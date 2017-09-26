@@ -1,0 +1,8 @@
+#! /bin/bash
+case "$0" in
+*cx) chmod +x "$@" ;;
+*c-x) chmod -x "$@" ;;
+*cw) chmod +w "$@" ;;
+*c-w) chmod -w "$@" ;;
+*) echo "$0: help"
+esac
